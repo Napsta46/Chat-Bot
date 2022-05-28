@@ -1,18 +1,18 @@
 import random
-from tkinter import Y
+
 
 
 print("ChatBot: What is your name?")
 user_input = input()
 print("Hello " + user_input + ', Nice to meet You, What do you want to know')
 
-name = "Danny"
+name = "I.T.K"
 weather = "Rainy"
 mood = "Sad"
 
-chatbot_template = "ChatBot : {0}"
+chatbot_template = name + " : {0}" 
 user_template  = user_input + " : {0}"
-
+#{0} is gotten from format function, this substitute the variable given. replaces the placeholders that are passed as parameters  
 
 responses = {
     "What's your name?": [
@@ -21,6 +21,9 @@ responses = {
     "Je mapple {0}".format(name),
     "You can call me {0}".format(name),
     "Where is my manners, You call me danny{0}".format(name)],
+    #suggested response for the question "Whats is your name?"
+    #the value(answers) are grouped in a list
+    
     
     "what's today's weather?": [
     "The weather is {0}".format(weather), 
@@ -43,6 +46,7 @@ responses = {
     "Sometimes saying nothing tells a lot :)", ],
     "default": [
     "this is a default message"]
+    #response is written in a key and value format where the key is the question and value is the answer
 }
         
         
@@ -52,6 +56,7 @@ def respond(message):
     else: 
         bot_message = random.choice(responses["default"])
     return bot_message
+# A function that calls in the random function to select random answers to the same question
 
 def related(x_text):
     if "name" in x_text:
@@ -65,6 +70,7 @@ def related(x_text):
     else:
         y_text = ""
     return y_text
+# A function helps to match words that can be related to the question
 
 def send_message(message): 
     print(user_template.format(message)) 
