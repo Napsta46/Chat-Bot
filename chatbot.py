@@ -3,14 +3,15 @@ from QA import responses
 from prediction import related
 
 
-
-print("ChatBot: What is your name?")
-user_input = input()
-print("Hello " + user_input + ', Nice to meet You, What do you want to know')
-
 name = "I.T.K"
 weather = "Rainy"
 mood = "Happy!"
+color = "blue"
+Age = "1 week old"
+
+print(name +" : What is your name?")
+user_input = input()
+print("Hello " + user_input + ", Nice to meet You")
 
 chatbot_template = name + " : {0}" 
 user_template  = user_input + " : {0}"

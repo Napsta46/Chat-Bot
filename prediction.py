@@ -1,6 +1,6 @@
 from QA import responses
 
-
+responses()
 def related(x_text):
     name = "I.T.K"
     weather = "Rainy"

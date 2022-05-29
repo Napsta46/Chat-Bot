@@ -1,15 +1,17 @@
+import random   
 def responses():
+    
     name = "I.T.K"
     weather = "Rainy"
     mood = "Happy!"
     
     responses = {   
-        "what's your name?": [
+        "what is your name?": [
         "They call me {0}".format(name),
         "I usually go by {0}".format(name),
         "Je mapple {0}".format(name),
         "You can call me {0}".format(name),
-        "Where is my manners, You call me danny{0}".format(name)],
+        "Where is my manners, You call me danny{0}".format(name),],
         #suggested response for the question "Whats is your name?"
         #the value(answers) are grouped in a list
         
@@ -48,3 +50,10 @@ def responses():
         #response is written in a key and value format where the key is the question and value is the answer
     }
     return responses
+
+def respond(message):
+    if message in responses(): 
+        bot_message = random.choice(responses()[message])
+    else: 
+        bot_message = random.choice(responses()["default"])
+    return bot_message
