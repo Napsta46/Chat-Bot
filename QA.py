@@ -1,12 +1,14 @@
 import random   
+
 def responses():
     
     name = "I.T.K"
     weather = "Rainy"
     mood = "Happy!"
     
+    
     responses = {   
-        "what is your name?": [
+        "What's your name?": [
         "They call me {0}".format(name),
         "I usually go by {0}".format(name),
         "Je mapple {0}".format(name),
@@ -16,7 +18,7 @@ def responses():
         #the value(answers) are grouped in a list
         
         
-        "what's today's weather?": [
+        "What's today's weather?": [
         "The weather is {0}".format(weather), 
         "It's {0} today".format(weather), 
         "Let me check, it looks {0} today".format(weather) ],
@@ -26,13 +28,13 @@ def responses():
         "Maybe yes, maybe no!", 
         "Yes, I am a robot with human feelings.", ],
         
-        "how are you?": [ 
+        "How are you?": [ 
         "I am feeling {0}".format(mood), 
         "{0}! How about you?".format(mood), 
         "I am {0}! How about yourself?".format(mood), ],
         
         
-        "exit": [
+        "Exit": [
         "Nice meeting you",
         "Goodbye",
         "Adios",
@@ -43,7 +45,7 @@ def responses():
         "What do you mean by saying nothing?", 
         "Sometimes saying nothing tells a lot"],
         
-        "default": [
+        "Default": [
         "this is a default message"]
         
         
@@ -51,9 +53,3 @@ def responses():
     }
     return responses
 
-def respond(message):
-    if message in responses(): 
-        bot_message = random.choice(responses()[message])
-    else: 
-        bot_message = random.choice(responses()["default"])
-    return bot_message
