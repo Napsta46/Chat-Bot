@@ -1,0 +1,89 @@
+def related(x_text):
+    name = "Footbot"
+    club_name = "Manchester United"
+    mood = "Happy"
+# uncommon words that can be found in responses
+    if "name" in x_text:
+        y_text = "What's your name?"
+    elif "how are you" in x_text:
+        y_text = "how are you?"
+    elif "robot" in x_text:
+        y_text = "Are you a robot?"
+    elif "football" in x_text:
+        y_text = "What is football?"
+    elif "home kit" in x_text:
+        y_text = "What colour is the home kit of both Manchester united?"
+    elif "appearance" in x_text:
+        y_text = "Which player has the most appearance"
+    elif "Lionel Messi debut" in x_text:
+        y_text = "Which team did Lionel Messi debut for?"
+    elif "top England" in x_text:
+        y_text = "What is the top England team called"
+    elif "Cristiano Ronaldo wear" in x_text:
+        y_text = "What shirt did Cristiano Ronaldo wear in man utd"
+    elif "Euro 2020" in x_text:
+        y_text = "What country won Euro 2020"
+    elif "lions" in x_text:
+        y_text = "How many lions are on England badge"
+    elif "David De Gea" in x_text:
+        y_text = "What position does David De Gea play?"
+    elif "half" in x_text:
+        y_text = "How long is one half of football?"
+    elif "Harry Maguire" in x_text:
+        y_text = "What position does Harry Maguire play?"
+    elif "Luiz Suarez" in x_text:
+        y_text = "Luiz Suarez is from which country?"
+    elif "Manchester United stadium?" in x_text:
+        y_text = "What is Manchester United stadium called?"
+    elif "Chelsea's coach" in x_text:
+        y_text = "Who is Chelsea's coach currently?"
+    elif "Egypt" in x_text:
+        y_text = "Which Liverpool player is from Egypt?"
+    elif "Heung min son" in x_text:
+        y_text = "Heung min son is from which country?"
+    elif "Goat" in x_text:
+        y_text = "Who is football greatest of all time(GOAT)?"
+    elif "VAR" in x_text:
+        y_text = "What does VAR stand for?"
+    elif "Chelsea's former" in x_text:
+        y_text = "Who is Chelsea's former coach before Thomas Tuchel"
+    elif "top scorer" in x_text:
+       y_text = "Premier League top scorer wins?"
+    elif "League below" in x_text:
+        y_text = "League below Premier League is called?"
+    elif "Newcastle's stadium" in x_text:
+        y_text = "Newcastle's stadium is called what?"
+    elif "How is Lionel Messi" in x_text:
+        y_text = "How old is Lionel Messi?"
+    elif "How old is Cristiano Ronaldo" in x_text:
+        y_text = "How old is Cristiano Ronaldo?"
+    elif "Lionel Messi career goal" in x_text:
+        y_text = "Lionel Messi has how man career goals?"
+    elif "Cristiano Ronaldo career goals" in x_text:
+        y_text = "Cristiano Ronaldo has how many career goals?"
+    elif "Chelsea's stadium" in x_text:
+        y_text = "What is Chelsea's stadium called?"
+    elif "Golden boots" in x_text:
+        y_text = "Who has the highest number of Golden boots?"
+    elif "{} year?".format(club_name) in x_text:
+        y_text = "{} was found in what year?".format(club_name)
+    elif "current coach" in x_text:
+        y_text = "Who is the current coach of {}?".format(club_name)
+    elif "many players" in x_text:
+        y_text = "How many players are currently in {}?".format(club_name)
+    elif "cups" in x_text:
+        y_text = "How many cups does {} have in total?".format(club_name)
+    elif "EPL trophies" in x_text:
+        y_text = "{} have won how many EPL trophies".format(club_name)
+    elif "stop" in x_text:
+        y_text = "exit"
+    elif "end" in x_text:
+        y_text = "exit"
+    elif "bye" in x_text:
+        y_text = "exit"
+    elif "exit" in x_text:
+        y_text = "exit"
+    else:
+        y_text = ""
+    return y_text
+# A function helps to match words that can be related to the question
