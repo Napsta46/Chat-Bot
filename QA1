@@ -1,0 +1,166 @@
+user_name = input('me: ')
+name = "FootBot"
+mood = "Happy"
+club_name = 'Manchester United'
+print("Bot: Hey {}, I'm {}, you wanna talk football?".format(user_name, name))
+responses = {
+
+"what's your name?": [
+"They call me {0}".format(name),
+"I usually go by {0}".format(name),
+"My name is the {0}".format(name) ],
+
+"how are you?": [
+"I am feeling {0}".format(mood),
+"{0}! How about you?".format(mood),
+"I am {0}! How about yourself?".format(mood) ],
+
+"Are you a robot?": [
+"What do you think?",
+"Maybe yes, maybe no!",
+"Yes, I am a robot with human feelings." ],
+
+"What is football?": [
+"A game played between two teams consisting 11 players each",
+"A game with the highest number of fan base",
+"It can also be called footie because it's played with the foot"],
+
+"What colour is the home kit of both Manchester united?":[
+    '{} have the colour Red'.format(club_name)
+],
+
+"Which Player has the most appearance in EPL?": [
+    'Gareth Barry'
+],
+
+"Which team did Lionel Messi debut for?": [
+    'Lionel Messi debuted for Barcelona'
+],
+
+"What is the top England team called?": [
+    'Premier League'
+],
+
+'What shirt number did Cristiano Ronaldo wear in Man utd?': [
+    '7'
+],
+
+'What country won Euro 2020?': [
+    'Italy'
+],
+
+'How many lions are on England badge?': [
+    '3'
+],
+
+'What position does David De Gea play?': [
+    'Goalkeeper'
+],
+
+'How long is one half of football?': [
+    '45'
+],
+
+'What position does Harry Maguire play?': [
+    'Center back'
+],
+
+'Luiz Suarez is from which country?': [
+    'Uruguay'
+],
+
+'What is Manchester United stadium called?': [
+    'Old Trafford'
+],
+
+
+"Who is Chelsea's coach currently?":[
+    'Thomas Tuchel'
+],
+
+'Which Liverpool player is from Egypt?':[
+    'Mohamed Salah'
+],
+
+'Heung Min Son is from which country?':[
+    'South Korea'
+],
+
+"Who is football's greatest of all time(GOAT)?":[
+    "Many people would tell you it's Cristiano Ronaldo but it is Lionel Messi",
+    'Lionel Messi is the GOAT',
+    'Lionel messi is the best'
+],
+
+'What does VAR stand for?': [
+    'Video Assistant Referee'
+],
+
+"Who was Chelsea's former coach before Thomas Tuchel?":[
+    'Frank Lampard'
+],
+
+"Premier League top scorer wins?":[
+    'Golden Boot'
+],
+
+'League below Premier League is called?':[
+    'Championship'
+],
+
+"Newcastle's stadium is called what?":[
+    "St James' Park"
+],
+
+'How old is Lionel Messi?':[
+    'Lionel Messi was born on 24th of June 1987 and currently 34'
+],
+
+'How old is Cristiano Ronaldo?':[
+    'Cristiano Ronaldo was born on 5th of February 1985 and currently 37'
+],
+
+"Lionel Messi has how many career goals?":[
+    'Lionel Messi has 764 goals'
+],
+
+"Cristiano Ronaldo has how many career goals?":[
+    'Cristiano Ronaldo  has 806 goals'
+],
+
+"What is Chelsea's stadium called?":[
+    'Stamford Bridge'
+],
+
+"Who has the highest number of Golden boots between Ronaldo and Messi?":[
+    "Messi has 6 while Ronaldo has 4"
+],
+
+
+"": [
+"Hey! Are you there?",
+"What do you mean by saying nothing?",
+"Sometimes saying nothing tells a lot :)", ],
+
+#Random questions about man utd
+"{} was found in what year?".format(club_name):[
+    "{} was found in year 1878".format(club_name)
+],
+"Who is the current coach of {}?".format(club_name):[
+    'Erik Ten Hag'
+],
+"How many players are in {}?".format(club_name):[
+    "{} has 36 players".format(club_name)
+],
+
+'How many cups does {} have in total'.format(club_name):[
+    '{} has 61 cups in total'
+],
+
+'{} have won how many EPL trophies'.format(club_name):[
+    '{} has won 20 Premier League trophies'
+],
+
+
+"default": [
+"What do you mean by that?"] }
